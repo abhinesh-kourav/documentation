@@ -1,0 +1,116 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+  <nav id="navbar">
+    <div id="navi">
+      <header>JAVA DOCUMENTATION</header>
+      <ol>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Objects_and_Classes">Objects and Classes</a></li>
+        <li><a class="nav-link" href="#Behavior">Behavior</a></li>
+        <li><a class="nav-link" href="#Expressions_and_Operators">Expressions and Operators</a></li>
+        <li><a class="nav-link" href="#References">References</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>Java is an object-oriented programming language developed by Sun Microsystems, a company
+        best known for its high-end Unix workstations. Modeled after C++, the Java language was
+        designed to be small, simple, and portable across platforms and operating systems, both at the
+        source and at the binary level.</p>
+      <p>Here are some advantages of Java:
+      <ol>
+        <li>Java is platform-independent.</li>
+        <li>Java is object-oriented.</li>
+        <li>Java is Easy to Learn.</li>
+      </ol>
+      </p>
+    </section>
+    <section id="Objects_and_Classes" class="main-section">
+      <header>Objects and Classes</header>
+      <p>A class is a template for multiple objects with similar features. Classes embody all the
+        features of a particular set of objects.
+        When you write a program in an object-oriented language, you don’t define actual objects. You
+        define classes of objects.
+        <br>An instance of a class is another word for an actual object. If classes are an abstract
+        representation of an object, an instance is its concrete representation.
+        We start with a basic class definition by opening up the editor and entering the following:<br>
+        <code>class Motorcycle {
+          }</code><br>
+        Now,we create some instance variables for this class—three of them, to be specific.<br>
+        <code>
+          String make;<br>
+          String color;<br>
+          boolean engineState;
+        </code>
+      </p>
+    </section>
+    <section id="Behavior" class="main-section">
+      <header>Behavior</header>
+      <p>A class’s behavior determines what instances of that class do when their internal state changes
+        or when that instance is asked to do something by another class or object. Behavior is the way
+        objects can do anything to themselves or have anything done to them.</p>
+      <p>To define an object’s behavior, you create methods, which look and behave just like functions
+        in other languages, but are defined inside a class. Java does not have functions defined outside
+        classes.<br>
+        Methods are functions defined inside classes that operate on instances of those classes.<br>
+        Now let’s add some behavior (methods) to the class. There are all kinds of things a motorcycle
+        can do, but to keep things short, let’s add just one method—a method that starts the engine.<br>
+        <code>void startEngine() {
+          if (engineState == true)<br>
+          System.out.println(“The engine is already on.”);<br>
+          else {<br>
+          engineState = true;<br>
+          System.out.println(“The engine is now on.”);<br>
+          }<br>
+          }<br></code>
+      </p>
+    </section>
+    <section id="Expressions_and_Operators" class="main-section">
+      <header>Expressions and Operators</header>
+      <p>Expressions are statements that return a value.<br>Arithmetic and tests for equality and magnitude are common examples of expressions. Because
+        they return a value, you can assign that result to a variable or test that value in other Java
+        statements.</p>
+      <p> Operators are special symbols that are commonly used in expressions.<br>Operators in Java include arithmetic, various forms of assignment, increment and decrement,
+        and logical operations. This section describes all these things.</p>
+
+      <p>Here are some examples of expressions and operators:<br>
+        <code>class ArithmeticTest {<br>
+          public static void main (String[] args) {<br>
+          short x = 6;<br>
+          int y = 4;<br>
+          float a = 12.5f;<br>
+          float b = 7f;<br>
+          System.out.println(“x is “ + x + “, y is “ + y);<br>
+          System.out.println(“x + y = “ + (x + y));<br>
+          System.out.println(“x - y = “ + (x - y));<br>
+          System.out.println(“x / y = “ + (x / y));<br>
+          System.out.println(“x % y = “ + (x % y));<br>
+          System.out.println(“a is “ + a + “, b is “ + b;<br>
+          System.out.println(“a / b = “ + (a / b));</code>
+      </p>
+      <p>The output for the above code is:<br>
+        <code>x is 6, y is 4<br>
+          x + y = 10<br>
+          x - y = 2<br>
+          x / y = 1<br>
+          x % y = 2<br>
+          a is 12.5, b is 7<br>
+          a / b = 1.78571</code>
+      </p>
+    </section>
+    <section id="References" class="main-section">
+      <header>References</header>
+      <p>
+      <ul>
+        <li>The book 'Teach Yourself Java in 21 Days' by Laura Lemay and Charles L. Perkins.</li>
+        <li>The books 'Informatics Practices Vol.I and Vol.II' by Sumita Arora</li>
+        <li>The book 'Java:The Legend' by Benjamin Evans</li>
+      </ul>
+      </p>.
+    </section>
+  </main>
+</body>
